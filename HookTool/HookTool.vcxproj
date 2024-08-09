@@ -104,8 +104,8 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>_DEBUG;HOOKTOOL_EXPORTS;_WINDOWS;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>C:\Libs\vcpkg\installed\x64-windows\lib;C:\Libs\vcpkg\installed\x64-windows\include;C:\Libs\vcpkg\installed\x64-windows\include\detours;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <AdditionalModuleDependencies>C:\Libs\vcpkg\installed\x64-windows\include\detours\detours.h;C:\Libs\vcpkg\installed\x64-windows\include\detours\detver.h</AdditionalModuleDependencies>
+      <AdditionalIncludeDirectories>C:\Bogdanova\dev\vcpkg\installed\x64-windows\lib;C:\Bogdanova\dev\vcpkg\installed\x64-windows\include;C:\Bogdanova\dev\vcpkg\installed\x64-windows\include\detours;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalModuleDependencies>C:\Bogdanova\dev\vcpkg\installed\x64-windows\include\detours\detours.h;C:\Bogdanova\dev\vcpkg\installed\x64-windows\include\detours\detver.h</AdditionalModuleDependencies>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>

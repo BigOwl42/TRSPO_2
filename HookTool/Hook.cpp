@@ -26,7 +26,36 @@ HANDLE myCreateFile(LPCSTR lpFileName,
 {
 	HANDLE handle = NULL;
 	printf("Mua-ha-ha! You programm is hack!\n");
-	realCreateFile(lpFileName, dwDesiredAccess, dwShareMode, lpSecurityAttributes, dwCreationDisposition, dwFlagsAndAttributes, hTemplateFile);
+	//realCreateFile(lpFileName, dwDesiredAccess, dwShareMode, lpSecurityAttributes, dwCreationDisposition, dwFlagsAndAttributes, hTemplateFile);
+	return handle;
+}
+
+
+
+
+typedef HANDLE(WINAPI* fnCreateFileW)(
+	LPCWSTR lpFileName,
+	DWORD dwDesiredAccess,
+	DWORD dwShareMode,
+	LPSECURITY_ATTRIBUTES lpSecurityAttributes,
+	DWORD dwCreationDisposition,
+	DWORD dwFlagsAndAttributes,
+	HANDLE hTemplateFile);
+fnCreateFileW realCreateFileW = CreateFileW;
+
+
+
+HANDLE myCreateFileW(LPCWSTR lpFileName,
+	DWORD dwDesiredAccess,
+	DWORD dwShareMode,
+	LPSECURITY_ATTRIBUTES lpSecurityAttributes,
+	DWORD dwCreationDisposition,
+	DWORD dwFlagsAndAttributes,
+	HANDLE hTemplateFile)
+{
+	HANDLE handle = NULL;
+	printf("Mua-ha-ha! You programm is hack!\n");
+//	realCreateFileW(lpFileName, dwDesiredAccess, dwShareMode, lpSecurityAttributes, dwCreationDisposition, dwFlagsAndAttributes, hTemplateFile);
 	return handle;
 }
 
@@ -55,6 +84,28 @@ int myAngryHook() {
 		return FALSE;
 	}
 
+	if ((dwDetoursErr = DetourTransactionBegin()) != NO_ERROR) {
+		printf("[!] DetourTransactionBegin error : %d \n", dwDetoursErr);
+		return FALSE;
+	}
+
+	if ((dwDetoursErr = DetourUpdateThread(GetCurrentThread())) != NO_ERROR) {
+		printf("[!] DetourUpdateThread error : %d \n", dwDetoursErr);
+		return FALSE;
+	}
+
+	// ������ MyMessageBoxA ������ g_pMessageBoxA, ������� �������� MessageBoxA
+	if ((dwDetoursErr = DetourAttach(&(PVOID&)realCreateFileW, myCreateFileW)) != NO_ERROR) {
+		printf("[!] DetourAttach error : %d \n", dwDetoursErr);
+		return FALSE;
+	}
+
+	// ����������� ��������� ���� ���������� ����� `DetourTransactionCommit` - ������������� ����������
+	if ((dwDetoursErr = DetourTransactionCommit()) != NO_ERROR) {
+		printf("[!] DetourTransactionCommit error : %d \n", dwDetoursErr);
+		return FALSE;
+	}
+
 
 	return 0;
 }
@@ -71,6 +122,7 @@ INT APIENTRY DllMain(HMODULE hDLL, DWORD Reason, LPVOID Reserved)
 	case DLL_PROCESS_ATTACH:
 	{
 		myAngryHook();
+		return TRUE;
 	}
 	break;
 	/*
@@ -85,7 +137,8 @@ INT APIENTRY DllMain(HMODULE hDLL, DWORD Reason, LPVOID Reserved)
 		 break;
 	 }
 	 */
-	return TRUE;
 	}
+	return TRUE;
+	
 }
 

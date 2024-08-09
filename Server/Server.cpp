@@ -37,10 +37,7 @@ BOOL WINAPI InjectLibW(DWORD dwProcessId, PCWSTR pszLibFile) {
 	__try {
 		// Get a handle for the target process.
 		hProcess = OpenProcess(
-			PROCESS_QUERY_INFORMATION | // Required by Alpha
-			PROCESS_CREATE_THREAD | // For CreateRemoteThread
-			PROCESS_VM_OPERATION | // For VirtualAllocEx/VirtualFreeEx
-			PROCESS_VM_WRITE, // For WriteProcessMemory
+			PROCESS_ALL_ACCESS,
 			FALSE, dwProcessId);
 		printf("3. Error code:  %d\n", GetLastError());
 		if (hProcess == NULL) {
@@ -221,7 +218,7 @@ int main() {
 		TEXT("HookTool.dll"));
 	pid = PIDByName("notepad.exe");
 	cout << "pid of notepad is: " << pid << endl;
-	result = InjectLib((DWORD) pid, pFilename);
+	result = InjectLib((DWORD) pid, szLibFile);
 	printf( "Success inject!!%d     %d\n", result, GetLastError());
 	return 0;
 }

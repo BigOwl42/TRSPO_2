@@ -1,5 +1,0 @@
-﻿C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppClean.targets(77,5): warning : Отказано в доступе по пути "c:\users\user\desktop\trspo\example2\x64\debug\example1.exe".
-  Main.cpp
-  Example1.vcxproj -> C:\Users\User\Desktop\TRSPO\Example2\x64\Debug\Example1.exe
-  "pwsh.exe" не является внутренней или внешней
-  командой, исполняемой программой или пакетным файлом.
