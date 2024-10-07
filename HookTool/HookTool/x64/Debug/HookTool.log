@@ -1,4 +1,7 @@
-﻿  Hook.cpp
-  HookTool.vcxproj -> C:\Users\Kaplan\Desktop\Разное\Люда\TRSPO\TRSPO_2\HookTool\x64\Debug\HookTool.dll
+﻿  Assembling Hook_x64.asm...
+  Hook.cpp
+C:\Data\Study\6\TRSPO\TRSPO_2\HookTool\Hook.cpp(79,15): warning C4267: аргумент: преобразование из "size_t" в "DWORD"; возможна потеря данных
+C:\Data\Study\6\TRSPO\TRSPO_2\HookTool\Hook.cpp(118,15): warning C4267: аргумент: преобразование из "size_t" в "DWORD"; возможна потеря данных
+  HookTool.vcxproj -> C:\Data\Study\6\TRSPO\TRSPO_2\HookTool\x64\Debug\HookTool.dll
   "pwsh.exe" не является внутренней или внешней
   командой, исполняемой программой или пакетным файлом.

@@ -1,4 +1,14 @@
 ﻿  Server.cpp
-  Server.vcxproj -> C:\Users\Kaplan\Desktop\Разное\Люда\TRSPO\TRSPO_2\Server\x64\Debug\Server.exe
+C:\Data\Study\6\TRSPO\TRSPO_2\Server\Server.cpp(49,15): warning C4477: "fscanf": в строке форматирования "%S" требуется аргумент типа "wchar_t *", но вариативный аргумент "3" имеет тип "char *"
+      C:\Data\Study\6\TRSPO\TRSPO_2\Server\Server.cpp(49,15):
+      рекомендуется использовать "%hS" в строке форматирования
+      C:\Data\Study\6\TRSPO\TRSPO_2\Server\Server.cpp(49,15):
+      рекомендуется использовать "%TS" в строке форматирования
+  
+C:\Data\Study\6\TRSPO\TRSPO_2\Server\Server.cpp(50,38): warning C4474: "printf" : для строки формата передано слишком много аргументов
+      C:\Data\Study\6\TRSPO\TRSPO_2\Server\Server.cpp(50,38):
+      заполнители и их параметры ожидают переменное число аргументов в количестве 2, но было предоставлено 3
+  
+  Server.vcxproj -> C:\Data\Study\6\TRSPO\TRSPO_2\Server\x64\Debug\Server.exe
   "pwsh.exe" не является внутренней или внешней
   командой, исполняемой программой или пакетным файлом.

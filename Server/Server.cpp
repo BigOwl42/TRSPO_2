@@ -1,6 +1,6 @@
 //Создать удалённый процесс
 //Загрузив в  него библиотеку
-
+#define _CRT_SECURE_NO_WARNINGS
 /******************************************************************************
 Module: InjLib.cpp
 Notices: Copyright (c) 2008 Jeffrey Richter & Christophe Nasarre
@@ -25,6 +25,35 @@ Notices: Copyright (c) 2008 Jeffrey Richter & Christophe Nasarre
 #endif // !UNICODE
 ///////////////////////////////////////////////////////////////////////////////
 using namespace std;
+
+
+
+//создать файлик
+//если файлик не пустой
+//открыть файлик
+//вывести данные
+// удалить всё
+//закрыть файлик
+void readFromFile() {
+	char time[256] = { 0 };
+	char name[256] = { 0 };
+	char fname[256] = { 0 };
+	FILE* file = fopen("C:\\Users\\Owl\\Desktop\\file.txt", "r+");
+	while (file == NULL) {
+		//printf("File does not exist!!\n");
+		//fclose(file);
+		file = fopen("C:\\Users\\Owl\\Desktop\\file.txt", "r+");
+		Sleep(100);
+	}
+	//считать информацию из файла и вывести
+	fscanf(file, "%s%s%S", name, time, fname);
+	printf("%s  %s   $S\n", name, time, fname);
+	//printf("It exist and we will del it!\n");
+	fclose(file);
+	while (remove("C:\\Users\\Owl\\Desktop\\file.txt") != 0);
+
+}
+
 
 BOOL WINAPI InjectLibW(DWORD dwProcessId, PCWSTR pszLibFile) {
 	printf("Hello from inject\n");
@@ -206,20 +235,50 @@ unsigned long PIDByName(const char* name)
 
 
 ///////////////////////////////////////////////////////////////////////////////
-int main() {
+int main(int argc, char* argv[])
+{
 	int result;
 	int pid;
-	printf("Hello!\n");
-	cin >> pid;
 	TCHAR szLibFile[MAX_PATH];
 	GetModuleFileName(NULL, szLibFile, _countof(szLibFile));
+	FILE* config = fopen("C:\\Users\\Owl\\Desktop\\config.txt", "w");
 	PTSTR pFilename = _tcsrchr(szLibFile, TEXT('\\')) + 1;
 	_tcscpy_s(pFilename, _countof(szLibFile) - (pFilename - szLibFile),
 		TEXT("HookTool.dll"));
-	pid = PIDByName("notepad.exe");
-	cout << "pid of notepad is: " << pid << endl;
+	printf("Hello!\n");
+	if (!strcmp(argv[1], "-pid")) {
+		pid = atoi(argv[2]);
+	}
+	else 
+		if (!strcmp(argv[1], "-name")) {
+		pid = PIDByName(argv[2]);
+		cout << "pid of" << argv[2] << "is" << pid << endl;
+	}
+		else {
+			cout << "Invalid first parametr! Good Bye!!" << endl;
+			fclose(config);
+			return 0;
+		}
+
+	if (!strcmp(argv[3], "-func")) {
+		fprintf(config, "func  %s", argv[4]);
+	}
+	else
+		if (!strcmp(argv[3], "-hide")) {
+			fprintf(config, "hide  %s", argv[4]);
+		}
+		else {
+			cout << "Invalid argument! GoodBye!" << endl;
+			fclose(config);
+			return 0;
+		}
+	fclose(config);
 	result = InjectLib((DWORD) pid, szLibFile);
 	printf( "Success inject!!%d     %d\n", result, GetLastError());
+	if (!strcmp(argv[3], "-func")) 
+		while (1) readFromFile();
+	int end;
+	cin >> end;
 	return 0;
 }
 ///////////////////////////////////////////////////////////////////////////////

@@ -6,4 +6,7 @@
   <ItemGroup>
     <ClInclude Include="HookTool.h" />
   </ItemGroup>
+  <ItemGroup>
+    <MASM Include="Hook_x64.asm" />
+  </ItemGroup>
 </Project>

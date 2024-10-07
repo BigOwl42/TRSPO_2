@@ -1,14 +1,30 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\Kaplan\\Desktop\\\u0420\u0430\u0437\u043D\u043E\u0435\\\u041B\u044E\u0434\u0430\\TRSPO\\TRSPO_2\\HookTool\\",
+  "WorkspaceRootPath": "C:\\Data\\Study\\6\\TRSPO\\TRSPO_2\\HookTool\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{34322F5F-D6E7-4123-80A8-5D34B6ABCBEE}|HookTool.vcxproj|C:\\Users\\Kaplan\\Desktop\\\u0420\u0430\u0437\u043D\u043E\u0435\\\u041B\u044E\u0434\u0430\\TRSPO\\TRSPO_2\\HookTool\\Hook.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "AbsoluteMoniker": "D:0:0:{34322F5F-D6E7-4123-80A8-5D34B6ABCBEE}|HookTool.vcxproj|C:\\Data\\Study\\6\\TRSPO\\TRSPO_2\\HookTool\\Hook_x64.asm||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{34322F5F-D6E7-4123-80A8-5D34B6ABCBEE}|HookTool.vcxproj|solutionrelative:Hook_x64.asm||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{34322F5F-D6E7-4123-80A8-5D34B6ABCBEE}|HookTool.vcxproj|C:\\Data\\Study\\6\\TRSPO\\TRSPO_2\\HookTool\\HookTool.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{34322F5F-D6E7-4123-80A8-5D34B6ABCBEE}|HookTool.vcxproj|solutionrelative:HookTool.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Data\\Study\\6\\TRSPO\\3\\3\\lab3\\TRSPO3\\bin\\Debug\\Trspo3.pkgdef||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{34322F5F-D6E7-4123-80A8-5D34B6ABCBEE}|HookTool.vcxproj|C:\\Data\\Study\\6\\TRSPO\\TRSPO_2\\HookTool\\Hook.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{34322F5F-D6E7-4123-80A8-5D34B6ABCBEE}|HookTool.vcxproj|solutionrelative:Hook.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{34322F5F-D6E7-4123-80A8-5D34B6ABCBEE}|HookTool.vcxproj|C:\\Users\\Kaplan\\Desktop\\\u0420\u0430\u0437\u043D\u043E\u0435\\\u041B\u044E\u0434\u0430\\TRSPO\\TRSPO_2\\HookTool\\HookTool.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{34322F5F-D6E7-4123-80A8-5D34B6ABCBEE}|HookTool.vcxproj|solutionrelative:HookTool.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Data\\Study\\6\\TRSPO\\TRSPO_2\\F\\myDll\\myDll\\dllmain.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Data\\Study\\6\\TRSPO\\TRSPO_2\\F\\myDll\\myDll\\MyDll_Header_.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Owl\\Downloads\\Telegram Desktop\\dllmain.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,32 +34,98 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 3,
           "Children": [
             {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "HookTool.h",
-              "DocumentMoniker": "C:\\Users\\Kaplan\\Desktop\\\u0420\u0430\u0437\u043D\u043E\u0435\\\u041B\u044E\u0434\u0430\\TRSPO\\TRSPO_2\\HookTool\\HookTool.h",
-              "RelativeDocumentMoniker": "HookTool.h",
-              "ToolTip": "C:\\Users\\Kaplan\\Desktop\\\u0420\u0430\u0437\u043D\u043E\u0435\\\u041B\u044E\u0434\u0430\\TRSPO\\TRSPO_2\\HookTool\\HookTool.h",
-              "RelativeToolTip": "HookTool.h",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAEAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-07-18T11:05:18.807Z"
+              "DocumentIndex": 2,
+              "Title": "Trspo3.pkgdef",
+              "DocumentMoniker": "C:\\Data\\Study\\6\\TRSPO\\3\\3\\lab3\\TRSPO3\\bin\\Debug\\Trspo3.pkgdef",
+              "RelativeDocumentMoniker": "..\\..\\3\\3\\lab3\\TRSPO3\\bin\\Debug\\Trspo3.pkgdef",
+              "ToolTip": "C:\\Data\\Study\\6\\TRSPO\\3\\3\\lab3\\TRSPO3\\bin\\Debug\\Trspo3.pkgdef",
+              "RelativeToolTip": "..\\..\\3\\3\\lab3\\TRSPO3\\bin\\Debug\\Trspo3.pkgdef",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003464|",
+              "WhenOpened": "2024-10-07T03:52:48.17Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "dllmain.cpp",
+              "DocumentMoniker": "C:\\Users\\Owl\\Downloads\\Telegram Desktop\\dllmain.cpp",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\..\\Users\\Owl\\Downloads\\Telegram Desktop\\dllmain.cpp",
+              "ToolTip": "C:\\Users\\Owl\\Downloads\\Telegram Desktop\\dllmain.cpp",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\..\\Users\\Owl\\Downloads\\Telegram Desktop\\dllmain.cpp",
+              "ViewState": "AgIAAFsAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-09-13T09:28:46.458Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Hook.cpp",
-              "DocumentMoniker": "C:\\Users\\Kaplan\\Desktop\\\u0420\u0430\u0437\u043D\u043E\u0435\\\u041B\u044E\u0434\u0430\\TRSPO\\TRSPO_2\\HookTool\\Hook.cpp",
-              "RelativeDocumentMoniker": "Hook.cpp",
-              "ToolTip": "C:\\Users\\Kaplan\\Desktop\\\u0420\u0430\u0437\u043D\u043E\u0435\\\u041B\u044E\u0434\u0430\\TRSPO\\TRSPO_2\\HookTool\\Hook.cpp",
-              "RelativeToolTip": "Hook.cpp",
-              "ViewState": "AQIAADIAAAAAAAAAAAAAADkAAAACAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-07-18T10:46:40.292Z",
+              "Title": "Hook_x64.asm",
+              "DocumentMoniker": "C:\\Data\\Study\\6\\TRSPO\\TRSPO_2\\HookTool\\Hook_x64.asm",
+              "RelativeDocumentMoniker": "Hook_x64.asm",
+              "ToolTip": "C:\\Data\\Study\\6\\TRSPO\\TRSPO_2\\HookTool\\Hook_x64.asm",
+              "RelativeToolTip": "Hook_x64.asm",
+              "ViewState": "AgIAABUAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2024-09-12T10:14:49.275Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "HookTool.h",
+              "DocumentMoniker": "C:\\Data\\Study\\6\\TRSPO\\TRSPO_2\\HookTool\\HookTool.h",
+              "RelativeDocumentMoniker": "HookTool.h",
+              "ToolTip": "C:\\Data\\Study\\6\\TRSPO\\TRSPO_2\\HookTool\\HookTool.h",
+              "RelativeToolTip": "HookTool.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-09-12T10:14:47.682Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Hook.cpp",
+              "DocumentMoniker": "C:\\Data\\Study\\6\\TRSPO\\TRSPO_2\\HookTool\\Hook.cpp",
+              "RelativeDocumentMoniker": "Hook.cpp",
+              "ToolTip": "C:\\Data\\Study\\6\\TRSPO\\TRSPO_2\\HookTool\\Hook.cpp",
+              "RelativeToolTip": "Hook.cpp",
+              "ViewState": "AgIAAKUAAAAAAAAAAAAAALEAAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-09-12T07:41:24.002Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "dllmain.cpp",
+              "DocumentMoniker": "C:\\Data\\Study\\6\\TRSPO\\TRSPO_2\\F\\myDll\\myDll\\dllmain.cpp",
+              "RelativeDocumentMoniker": "..\\F\\myDll\\myDll\\dllmain.cpp",
+              "ToolTip": "C:\\Data\\Study\\6\\TRSPO\\TRSPO_2\\F\\myDll\\myDll\\dllmain.cpp",
+              "RelativeToolTip": "..\\F\\myDll\\myDll\\dllmain.cpp",
+              "ViewState": "AgIAAFMAAAAAAAAAAAAAAGcAAAA4AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-09-12T07:39:30.129Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "MyDll_Header_.h",
+              "DocumentMoniker": "C:\\Data\\Study\\6\\TRSPO\\TRSPO_2\\F\\myDll\\myDll\\MyDll_Header_.h",
+              "RelativeDocumentMoniker": "..\\F\\myDll\\myDll\\MyDll_Header_.h",
+              "ToolTip": "C:\\Data\\Study\\6\\TRSPO\\TRSPO_2\\F\\myDll\\myDll\\MyDll_Header_.h",
+              "RelativeToolTip": "..\\F\\myDll\\myDll\\MyDll_Header_.h",
+              "ViewState": "AgIAACcAAAAAAAAAAAAAADYAAAACAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-09-12T07:40:33.322Z"
             }
           ]
         }

@@ -54,6 +54,7 @@
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
   <ImportGroup Label="ExtensionSettings">
+    <Import Project="$(VCTargetsPath)\BuildCustomizations\masm.props" />
   </ImportGroup>
   <ImportGroup Label="Shared">
   </ImportGroup>
@@ -76,10 +77,13 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>WIN32;_DEBUG;HOOKTOOL_EXPORTS;_WINDOWS;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>C:\Data\Study\6\TRSPO\TRSPO_2\src\vcpkg\installed\x64-windows\include\detours;C:\Data\Study\6\TRSPO\TRSPO_2\src\vcpkg\installed\x64-windows\include;C:\Data\Study\6\TRSPO\TRSPO_2\src\vcpkg\installed\x64-windows\lib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalModuleDependencies>C:\Data\Study\6\TRSPO\TRSPO_2\src\vcpkg\installed\x64-windows\include\detours\detver.h;C:\Data\Study\6\TRSPO\TRSPO_2\src\vcpkg\installed\x64-windows\include\detours\detours.h;%(AdditionalModuleDependencies)</AdditionalModuleDependencies>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>detours.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
@@ -104,7 +108,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>_DEBUG;HOOKTOOL_EXPORTS;_WINDOWS;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>C:\Bogdanova\dev\vcpkg\installed\x64-windows\lib;C:\Bogdanova\dev\vcpkg\installed\x64-windows\include;C:\Bogdanova\dev\vcpkg\installed\x64-windows\include\detours;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Data\Study\6\TRSPO\TRSPO_2\src\vcpkg\installed\x64-windows\include\detours;C:\Bogdanova\dev\vcpkg\installed\x64-windows\include;C:\Bogdanova\dev\vcpkg\installed\x64-windows\include\detours;C:\Data\Study\6\TRSPO\TRSPO_2\src\vcpkg\installed\x64-windows\include;C:\Data\Study\6\TRSPO\TRSPO_2\src\vcpkg\installed\x64-windows\lib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AdditionalModuleDependencies>C:\Bogdanova\dev\vcpkg\installed\x64-windows\include\detours\detours.h;C:\Bogdanova\dev\vcpkg\installed\x64-windows\include\detours\detver.h</AdditionalModuleDependencies>
     </ClCompile>
     <Link>
@@ -135,7 +139,13 @@
   <ItemGroup>
     <ClInclude Include="HookTool.h" />
   </ItemGroup>
+  <ItemGroup>
+    <MASM Include="Hook_x64.asm">
+      <FileType>Document</FileType>
+    </MASM>
+  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
+    <Import Project="$(VCTargetsPath)\BuildCustomizations\masm.targets" />
   </ImportGroup>
 </Project>
